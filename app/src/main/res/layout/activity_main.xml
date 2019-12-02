@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_delay"
+        android:onClick="onDelayStartClick"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="点击，然后手动切到后台"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_service"
+        android:onClick="onServiceClick"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="启动前台服务"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_delay" />
+
+    <Button
+        android:id="@+id/btn_pending"
+        android:onClick="onPendingClick"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="PendingIntent"
+        android:textAllCaps="false"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_service" />
+
+    <Button
+        android:id="@+id/btn_music"
+        android:onClick="onMusicClick"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="播放音乐"
+        android:textAllCaps="false"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_pending" />
+
+    <Button
+        android:id="@+id/btn_foreground"
+        android:onClick="onForegroundClick"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="切换到前台"
+        android:textAllCaps="false"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_music" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
