@@ -1,0 +1,2 @@
+# StartFromBackTest
+StartActivity from background!
